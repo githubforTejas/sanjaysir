@@ -66,7 +66,7 @@ public class BaseClass
 			driver=new ChromeDriver();
 		}
 		else {
-			driver=new FirefoxDriver();
+			driver=new ChromeDriver();
 		}
 
 		System.out.println("Browser successfully launched");
