@@ -53,7 +53,7 @@ public class BaseClass
 		//String BROWSER = fLib.getPropertKeyValue("browser");
 		//String URL = fLib.getPropertKeyValue("url");
 		
-		if(BROWSER.equalsIgnoreCase("firfox"))
+		if(BROWSER.equalsIgnoreCase("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
