@@ -68,6 +68,7 @@ public class BaseClass
 		else {
 			driver=new FirefoxDriver();
 		}
+
 		System.out.println("Browser successfully launched");
 		//implicitly wait
 		sdriver=driver;
