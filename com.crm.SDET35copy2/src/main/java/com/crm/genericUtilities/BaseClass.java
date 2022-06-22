@@ -65,9 +65,7 @@ public class BaseClass
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 		}
-// 		else {
-// 			driver=new ChromeDriver();
-// 		}
+
 		System.out.println("Browser successfully launched");
 		//implicitly wait
 		sdriver=driver;
