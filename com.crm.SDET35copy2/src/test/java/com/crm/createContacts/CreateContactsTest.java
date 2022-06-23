@@ -14,6 +14,7 @@ public class CreateContactsTest extends BaseClass{
 @Test(retryAnalyzer = com.crm.genericUtilities.RetryAnalyserImptn.class)
 	public void createContactTest() throws Throwable{
 
+		
 		//To get a random number
 		int randNum = jLib.getRandomNumber();
 		
@@ -42,6 +43,7 @@ public class CreateContactsTest extends BaseClass{
 		Assert.assertTrue(presentContactName.contains(LastName));
 		
 		//Print output is report and console
-		Reporter.log("createContactTest is pass", true);
+		Reporter.log("createContactTest is pass pass", true);
+		
 	}
 }
