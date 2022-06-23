@@ -43,7 +43,7 @@ public class CreateContactsTest extends BaseClass{
 		Assert.assertTrue(presentContactName.contains(LastName));
 		
 		//Print output is report and console
-		Reporter.log("createContactTest is pass false", true);
+		Reporter.log("createContactTest is pass", true);
 		
 	}
 }
