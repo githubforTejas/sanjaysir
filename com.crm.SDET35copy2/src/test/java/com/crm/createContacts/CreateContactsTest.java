@@ -2,6 +2,7 @@ package com.crm.createContacts;
 
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.crm.genericUtilities.BaseClass;
@@ -10,6 +11,7 @@ import com.crm.objectRepository.ContactsPage;
 import com.crm.objectRepository.CreateNewContactPage;
 import com.crm.objectRepository.HomePage;
 
+@Listeners(com.crm.genericUtilities.ItestListenerImtn.class)
 public class CreateContactsTest extends BaseClass{
 @Test(retryAnalyzer = com.crm.genericUtilities.RetryAnalyserImptn.class)
 	public void createContactTest() throws Throwable{
@@ -31,6 +33,7 @@ public class CreateContactsTest extends BaseClass{
 		//click on create contacts icon
 		ContactsPage cpage=new ContactsPage(driver);
 		cpage.clickOnCreateCtctLkpImg();
+		Assert.fail();
 		
 		//enter the first name,Last name and click on save button
 		CreateNewContactPage cnpage=new CreateNewContactPage(driver);

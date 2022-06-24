@@ -230,12 +230,13 @@ public void clickOnEnterButton(WebDriver driver)
  * @param screenShotName
  * @throws Throwable
  */
-public void takeScreenShot(WebDriver driver,String screenShotName)throws Throwable
+public static String takeScreenShot(WebDriver driver,String screenShotName)throws Throwable
 {
 	TakesScreenshot takeScreenShot = (TakesScreenshot)driver;
 	File src = takeScreenShot.getScreenshotAs(OutputType.FILE);
 	File dst = new File("./screenShot/"+screenShotName+".PNG");
 	Files.copy(src, dst);
+	return screenShotName;
 }
 /**
  * it is used to perform scrollBar Actions
