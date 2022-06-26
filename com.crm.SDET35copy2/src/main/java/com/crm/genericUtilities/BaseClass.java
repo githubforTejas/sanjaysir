@@ -33,7 +33,7 @@ public class BaseClass
 	public JavaUtility jLib=new JavaUtility();
 	
 	/**
-	 * connecting to database
+	 * connecting to database(ok..)
 	 */
 	@BeforeSuite(groups = {"smokeTest","regressionTest"})
 	public void dbConfig()
